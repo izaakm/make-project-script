@@ -58,3 +58,12 @@ and you can use it as such: `pinit /path/to/folder` or if you are already in the
 ## Similar Projects
 I'm not the only one creating similar cookie-cutter projects:
  - https://github.com/Reproducible-Science-Curriculum/rr-init
+
+References
+==========
+
+1. Chen, D., Gonzalez, I., & Loyall, D. (2015).
+   computational-project-cookie-cutter: DOI Release (v.0.1.2). Zenodo.
+   https://doi.org/10.5281/ZENODO.16558
+
+<!-- END -->
