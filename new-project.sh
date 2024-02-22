@@ -1,20 +1,36 @@
 #!/usr/bin/env bash
 
-# don't overwrite files.
+# Don't overwrite files.
 set -o noclobber
 
+# Exit immediately if any command returns an error code.
+set -e
+
 # Exit if no arguments were provided.
-[ $# -eq 0 ] && { echo "Usage: $0 [target directory]"; exit 1; }
+[ $# -eq 0 ] && { echo "Usage: $0 <project>"; exit 1; }
 
 # the first argument passed into the script should be the dir
 # where you want the folder structure setup
 
 echo "Setting up folder structure in $1"
 
-if [ ! -d "$1" ]; then
-    mkdir $1
+# Do not modify existing directories.
+if [ -d "$1" ]; then
+    echo "[ERROR] Project directory already exists: $1"
+    exit 2
 fi
+
+# Make the project directory then cd into it.
+mkdir $1
 cd $1
+
+# Create an empty README file and initialize this directory as a Git repo.
+touch README.md
+git init .
+git add README.md
+git commit -m "Initialize new project repository"
+
+# Setup subdirectories.
 mkdir doc data src bin results
 
 cd doc
