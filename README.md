@@ -12,23 +12,15 @@ What does this script do?
 Project Structure
 -----------------
 
-the `setup_project_dir.sh` script creates the following folder structure:
+the `new-project.sh` script creates the following folder structure:
 
-    Path_Provided
-    |- doc/           # directory for documentation, one subdirectory for manuscript
-    |
-    |- data/          # data for storing fixed data sets
-    |
-    |- src/           # any source code
-    |
-    |- bin/           # any compiled binaries or scripts
-    |
-    |- results/       # output for tracking computational experiments performed on data
-
-A README containing a brief blurb is placed in each folder.
-This is because git will not track empty folders and placing a README will
-remind you of what goes in each folder, and also the overall
-folder structure will be retained
+    example
+    ├── README.md
+    ├── bin
+    ├── data
+    ├── doc
+    ├── results
+    └── src
 
 Installation
 ------------
