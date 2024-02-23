@@ -12,39 +12,52 @@ What does this script do?
 Project Structure
 -----------------
 
-the `new-project.sh` script creates the following folder structure:
+The `new-project.sh` script creates a new project directory with the following
+structure:
 
     example
+    ├── CITATION.cff
     ├── README.md
     ├── bin
     ├── data
-    ├── doc
+    │   ├── anthro
+    │   ├── derived
+    │   └── raw
+    ├── docs
+    ├── notebooks
     ├── results
     └── src
 
-Installation
-------------
-
-There are a few ways set everything up.
-
-1. fork/clone the repo to your computer
-1. ...
-
-
-How to use this script
-----------------------
-
-Run this script from the command line:
+Usage
+-----
 
 ```
-$ bash /path/to/compbio-project-script/new-project.sh /path/to/your-new-project
+$ bash /path/to/compbio-project-script/new-project.sh <project-directory>
+```
+
+The script will create `<project-directory>`. If `<project-directory>` already
+exists, the script will exit with an error.
+
+You can use a relative path to create a new project directory in the current working directory:
+
+```
+$ bash /path/to/compbio-project-script/new-project.sh example
+$ cd example
+```
+
+
+Or you can use an absolute path to create a new project directory anywhere (as long as the parent directory already exists):
+
+```
+$ bash /path/to/compbio-project-script/new-project.sh /path/to/example
+$ cd /path/to/example
 ```
 
 Optional: Create an *alias* for this script so that you can run it easily from
 anywhere. To do so, you can add the following to your `.bashrc`:
 
 ```
-alias newproject='/path/to/compbio-project-script/new-project.sh'
+alias newproject='bash /path/to/compbio-project-script/new-project.sh'
 ```
 
 Then, you can run this script as:
@@ -52,6 +65,17 @@ Then, you can run this script as:
 ```
 $ newproject /path/to/your-new-project
 ```
+
+Installation
+------------
+
+1. Fork this repo by clicking the 'Fork' button above.
+1. Clone the repo to your computer:
+    ```
+    $ git clone https://github.com/<your-GitHub-username>/compbio-project-script.git
+    $ cd compbio-project-script
+    ```
+1. Edit the script to create the project directory structure of your liking.
 
 
 References
