@@ -78,6 +78,12 @@ Installation
 1. Edit the script to create the project directory structure of your liking.
 
 
+Acknowledgements
+================
+
+- Forked from [chendaniely/computational-project-cookie-cutter][730938c] (Chen et al., 2015)
+
+
 References
 ==========
 
@@ -88,12 +94,6 @@ References
    Projects. In F. Lewitter (Ed.), PLoS Computational Biology (Vol. 5, Issue 7,
    p. e1000424). Public Library of Science (PLoS).
    https://doi.org/10.1371/journal.pcbi.1000424
-
-
-Acknowledgements
-================
-
-- Forked from [chendaniely/computational-project-cookie-cutter][730938c] (Chen et al., 2015)
 
 
 [730938c]: https://github.com/chendaniely/computational-project-cookie-cutter/tree/730938cb29a4e00c36083e242e5dd5be55b3e024
