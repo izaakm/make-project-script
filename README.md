@@ -45,25 +45,11 @@ $ bash /path/to/compbio-project-script/new-project.sh example
 $ cd example
 ```
 
-
 Or you can use an absolute path to create a new project directory anywhere (as long as the parent directory already exists):
 
 ```
 $ bash /path/to/compbio-project-script/new-project.sh /path/to/example
 $ cd /path/to/example
-```
-
-Optional: Create an *alias* for this script so that you can run it easily from
-anywhere. To do so, you can add the following to your `.bashrc`:
-
-```
-alias newproject='bash /path/to/compbio-project-script/new-project.sh'
-```
-
-Then, you can run this script as:
-
-```
-$ newproject /path/to/your-new-project
 ```
 
 Installation
@@ -76,6 +62,18 @@ Installation
     $ cd compbio-project-script
     ```
 1. Edit the script to create the project directory structure of your liking.
+1. Optional: Create an *alias* for this script so that you can run it easily
+   from anywhere. To do so, you can add the following to your `.bashrc`:
+
+    ```
+    alias newproject='bash /path/to/compbio-project-script/new-project.sh'
+    ```
+
+    Then, you can run this script as:
+
+    ```
+    $ newproject /path/to/your-new-project
+    ```
 
 
 Acknowledgements
