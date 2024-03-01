@@ -63,11 +63,14 @@ Installation
     ```
 1. Edit the script to create the project directory structure of your liking.
 1. Optional: Create an *alias* for this script so that you can run it easily
-   from anywhere. To do so, you can add the following to your `.bashrc`:
+   from anywhere. To do so, you can add the following to your `.bashrc` (or
+   `.zshrc`):
 
     ```
     alias mkprj='bash /path/to/compbio-project-script/make-project.sh'
     ```
+
+    Restart your terminal/shell or `source .bashrc` to set up the alias.
 
     Then, you can run this script as:
 
