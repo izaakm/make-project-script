@@ -12,7 +12,7 @@ What does this script do?
 Project Structure
 -----------------
 
-The `new-project.sh` script creates a new project directory with the following
+The `make-project.sh` script creates a new project directory with the following
 structure:
 
     example
@@ -32,7 +32,7 @@ Usage
 -----
 
 ```
-$ bash /path/to/compbio-project-script/new-project.sh <project-directory>
+$ bash /path/to/compbio-project-script/make-project.sh <project-directory>
 ```
 
 The script will create `<project-directory>`. If `<project-directory>` already
@@ -41,14 +41,14 @@ exists, the script will exit with an error.
 You can use a relative path to create a new project directory in the current working directory:
 
 ```
-$ bash /path/to/compbio-project-script/new-project.sh example
+$ bash /path/to/compbio-project-script/make-project.sh example
 $ cd example
 ```
 
 Or you can use an absolute path to create a new project directory anywhere (as long as the parent directory already exists):
 
 ```
-$ bash /path/to/compbio-project-script/new-project.sh /path/to/example
+$ bash /path/to/compbio-project-script/make-project.sh /path/to/example
 $ cd /path/to/example
 ```
 
@@ -66,13 +66,13 @@ Installation
    from anywhere. To do so, you can add the following to your `.bashrc`:
 
     ```
-    alias newproject='bash /path/to/compbio-project-script/new-project.sh'
+    alias mkprj='bash /path/to/compbio-project-script/make-project.sh'
     ```
 
     Then, you can run this script as:
 
     ```
-    $ newproject /path/to/your-new-project
+    $ mkprj /path/to/your-make-project
     ```
 
 
